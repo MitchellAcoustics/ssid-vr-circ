@@ -1,5 +1,5 @@
 import argparse
-import process
+from ssid_vr_circ import process
 
 parser = argparse.ArgumentParser(description='Process circumplex data from SSID VR Circumplex Study')
 parser.add_argument('circ_dir', type=str, help='Directory containing circumplex data')
