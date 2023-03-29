@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ssid-vr-circ"
+version = "0.1.0"
+description = ""
+authors = ["Andrew Mitchell <mitchellacoustics15@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ssid_vr_circ"}]
+
+[tool.poetry.dependencies]
+python = "^3.10, <3.11"
+pandas = "^1.5.3"
+openpyxl = "^3.1.2"
+soundscapy = "^0.4.1"
+matplotlib = "3.5.3"
+jupyter = "^1.0.0"
+ipykernel = "^6.22.0"
+
+[tool.poetry.scripts]
+ssid-vr-circ_cli = 'ssid_vr_circ.cli:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
